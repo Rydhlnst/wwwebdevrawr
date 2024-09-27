@@ -52,5 +52,5 @@ export async function CreatePostAction(prevStete: any, formData: FormData) {
         },
     });
 
-    return redirect("/dashboard/sites")
+    return redirect(`/dashboard/sites/${formData.get('blogId')}`)
 }
